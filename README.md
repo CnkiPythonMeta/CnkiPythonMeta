@@ -9,8 +9,17 @@ downloading and install Python:https://wiki.python.org/moin/BeginnersGuide/Downl
 <2> Firstly, you may now add files that are used to prepare the input directory and file for running CnkiPythonMeta. 
     When you’re done, the input directory and file structure will look like this:
 
-![image](https://user-images.githubusercontent.com/45684044/214875975-de55ded2-7b1a-4558-a032-3efe064cf4d0.png)
-
+Running_CnkiPythonMeta/
+├──Input_Data_1-Included_Literature/
+│        ├──1.txt
+│        ├──2.txt 
+│        ├──...
+│		 └──n.txt
+│
+├──Input_Data_2-Core_Journal_Data/
+│        └──Core_Journal_Data.txt
+│
+└──Input_Data_3-Citations_and_Downloads_Data/
 
 <3>Install CnkiPythonMeta by pip:
  	>>> pip install CnkiPythonMeta --upgrade
@@ -55,4 +64,7 @@ downloading and install Python:https://wiki.python.org/moin/BeginnersGuide/Downl
 
 <12>Generate author data:
 	>>> CnkiPythonMeta.author_caculate(author_paperNum_dict)
+	
+	
+	
 	
