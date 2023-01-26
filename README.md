@@ -1,3 +1,4 @@
+<pre> 
 This is a CnkiPythonMeta package for processing data from CNKI(https://www.cnki.net/),
 which the input file must be TXT format form 2000 to 2022 and it will merge the TXT files into the single EXCEL file 
 as basic data for further analysis.
@@ -8,16 +9,16 @@ downloading and install Python:https://wiki.python.org/moin/BeginnersGuide/Downl
 
 <2> Firstly, you may now add files that are used to prepare the input directory and file for running CnkiPythonMeta.  
     When you’re done, the input directory and file structure will look like this:
-    
+   
 Running_CnkiPythonMeta/  
 ├─Input_Data_1-Included_Literature  
-│       \├─1.txt  
-│       \├─2.txt  
-│       \├─...  
-│       \└─n.txt  
+│       ├─1.txt  
+│       ├─2.txt  
+│       ├─...  
+│       └─n.txt  
 │      
 ├─Input_Data_2-Core_Journal_Data  
-│       \└─Core_Journal_Data.txt  
+│       └─Core_Journal_Data.txt  
 │      
 └─Input_Data_3-Citations_and_Downloads_Data
 
@@ -65,6 +66,5 @@ Running_CnkiPythonMeta/
 <12>Generate author data:  
 	>>> CnkiPythonMeta.author_caculate(author_paperNum_dict)  
 	
-	
-	
+<pre> 	
 	
