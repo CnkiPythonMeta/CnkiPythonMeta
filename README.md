@@ -48,23 +48,23 @@ Running_CnkiPythonMeta/
     >>> result_list = CnkiPythonMeta.output_result(journal_list, paperName_infoList_dict, paperName_QuotationsDownloadsInfo_dict)  
 	
 <7>Generate histogram:  
-	>>> year_paperNum_dict, year_quations_dict, year_downloads_dict, Organ_paperNum_dict, found_paperNum_dict, author_paperNum_dict = CnkiPythonMeta.get_year_paperNum_dict(result_list)  
-	>>> CnkiPythonMeta.Histogram(year_paperNum_dict)  
+    >>> year_paperNum_dict, year_quations_dict, year_downloads_dict, Organ_paperNum_dict, found_paperNum_dict, author_paperNum_dict = CnkiPythonMeta.get_year_paperNum_dict(result_list)  
+    >>> CnkiPythonMeta.Histogram(year_paperNum_dict)  
 	
 <8>Generate line chart:  
-	>>> CnkiPythonMeta.line_chart(year_quations_dict, year_downloads_dict)  
+    >>> CnkiPythonMeta.line_chart(year_quations_dict, year_downloads_dict)  
   
 <9>Calculate Pearson correlation coefficient:  
-	>>> CnkiPythonMeta.caculate_pearsonr(year_paperNum_dict, year_quations_dict, year_downloads_dict)  
+   >>> CnkiPythonMeta.caculate_pearsonr(year_paperNum_dict, year_quations_dict, year_downloads_dict)  
 	
 <10>Generate organization data:  
-	>>> CnkiPythonMeta.Organ_caculate(Organ_paperNum_dict)  
+    >>> CnkiPythonMeta.Organ_caculate(Organ_paperNum_dict)  
 	
 <11>Generate fund data:  
-	>>> CnkiPythonMeta.found_caculate(found_paperNum_dict)  
+    >>> CnkiPythonMeta.found_caculate(found_paperNum_dict)  
 
 <12>Generate author data:  
-	>>> CnkiPythonMeta.author_caculate(author_paperNum_dict)  
+    >>> CnkiPythonMeta.author_caculate(author_paperNum_dict)  
 	
 <pre> 	
 	
