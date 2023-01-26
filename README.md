@@ -11,9 +11,7 @@ downloading and install Python:https://wiki.python.org/moin/BeginnersGuide/Downl
     When you’re done, the input directory and file structure will look like this:
 
 Running_CnkiPythonMeta/  
-
 ├──Input_Data_1-Included_Literature/  
-
 │        ├──1.txt
 │        ├──2.txt 
 │        ├──...
