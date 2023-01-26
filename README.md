@@ -11,10 +11,10 @@ downloading and install Python:https://wiki.python.org/moin/BeginnersGuide/Downl
     
 Running_CnkiPythonMeta/  
 ├─Input_Data_1-Included_Literature
-│      1.txt
-│      2.txt
-│      ...
-│      n.txt
+│      1.txt  
+│      2.txt  
+│      ...  
+│      n.txt  
 │      
 ├─Input_Data_2-Core_Journal_Data
 │      Core_Journal_Data.txt
