@@ -6,15 +6,18 @@ as basic data for further analysis.
 If you are not familiar with Python, we highly recommend you to browse the Python official website for 
 downloading and install Python:https://wiki.python.org/moin/BeginnersGuide/Download
 
-<2> Firstly, you may now add files that are used to prepare the input directory and file for running CnkiPythonMeta. 
+<2> Firstly, you may now add files that are used to prepare the input directory and file for running CnkiPythonMeta.  
+
     When you’re done, the input directory and file structure will look like this:
 
-Running_CnkiPythonMeta/
-├──Input_Data_1-Included_Literature/
+Running_CnkiPythonMeta/  
+
+├──Input_Data_1-Included_Literature/  
+
 │        ├──1.txt
 │        ├──2.txt 
 │        ├──...
-│		 └──n.txt
+│	 └──n.txt
 │
 ├──Input_Data_2-Core_Journal_Data/
 │        └──Core_Journal_Data.txt
@@ -25,7 +28,7 @@ Running_CnkiPythonMeta/
  	>>> pip install CnkiPythonMeta --upgrade
 	
 <4>Running Python where Running_CnkiPythonMeta is located, then import python packages:
-		python/py
+	python/py
 	>>> import os
 	>>> import xlrd
 	>>> import xlwt
