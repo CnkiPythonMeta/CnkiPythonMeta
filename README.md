@@ -5,7 +5,7 @@ as basic data for further analysis.
 
 <1>Download and install Python:
 If you are not familiar with Python, we highly recommend you to browse the Python official website for 
-downloading and install Python:https://wiki.python.org/moin/BeginnersGuide/Download
+downloading and install Python:https://wiki.python.org/moin/BeginnersGuide/Download.
 
 <2> Firstly, you may now add files that are used to prepare the input directory and file for running CnkiPythonMeta.  
     When you’re done, the input directory and file structure will look like this:
