@@ -48,7 +48,7 @@ to your computer and the test data are now made available at:https://github.com/
 <5>Extract all downloads and citations data from TXT files into a single EXEL file:  
     >>> paperName_QuotationsDownloadsInfo_dict = CnkiPythonMeta.get_paperName_QuotationsDownloadsInfo_dict(Quotations_and_downloads_data_dir)  
 
-<6>Mark the core journals, count the number of authors, merge citations and downloads data:  
+<6>Mark the core journals, count the number of authors, merge all citations and downloads data:  
     >>> result_list = CnkiPythonMeta.output_result(journal_list, paperName_infoList_dict, paperName_QuotationsDownloadsInfo_dict)  
 	
 <7>Generate the histogram:  
