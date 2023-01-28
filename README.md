@@ -23,7 +23,7 @@ Running_CnkiPythonMeta/
 └─Input_Data_3-Citations_and_Downloads_Data
 
 If you are still struggle with the input directory and file structure, you could directly copy the test data 
-to your computer and the test data are now made available at:https://github.com/CnkiPythonMeta/CnkiPythonMeta/tree/main/test
+to your computer and the test data are now made available at:https://github.com/CnkiPythonMeta/CnkiPythonMeta/tree/main/test.
 
 
 <3>CnkiPythonMeta releases are available as wheel packages for Windows and Linux on PyPI. Install it using pip:  
