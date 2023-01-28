@@ -22,7 +22,7 @@ Running_CnkiPythonMeta/
 │      
 └─Input_Data_3-Citations_and_Downloads_Data
 
-If you still struggle with the input directory and file structure, you could directly copy the test data 
+If you are still struggle with the input directory and file structure, you could directly copy the test data 
 to your computer and the test data are now made available at:https://github.com/CnkiPythonMeta/CnkiPythonMeta/tree/main/test
 
 
