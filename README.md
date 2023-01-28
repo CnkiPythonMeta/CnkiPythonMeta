@@ -1,5 +1,5 @@
 <pre> 
-we report a computational method and program（CnkiPythonMeta）based on the Python programming language for   
+We report a computational method and program（CnkiPythonMeta）based on the Python programming language for   
 basic data analysis and processing.This is a CnkiPythonMeta package for processing data from CNKI(https://www.cnki.net/),  
 which the input file must be TXT format form 2000 to 2022 and it will merge the TXT files into the single EXCEL file   
 as basic data for further analysis.
