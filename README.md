@@ -11,16 +11,18 @@ downloading and installing Python:https://wiki.python.org/moin/BeginnersGuide/Do
     When you’re done, the input directory and file structure will look like this:
    
 Running_CnkiPythonMeta/  
-├─Input_Data_1-Included_Literature  
+├─Input_Data_1-Included_Literature/
 │       ├─1.txt  
 │       ├─2.txt  
 │       ├─...  
 │       └─n.txt  
 │      
-├─Input_Data_2-Core_Journal_Data  
+├─Input_Data_2-Core_Journal_Data/  
 │       └─Core_Journal_Data.txt  
 │      
-└─Input_Data_3-Citations_and_Downloads_Data
+└─Input_Data_3-Citations_and_Downloads_Data/
+        Citations_and_Downloads_Data.txt
+
 
 If you are still struggle with the input directory and file structure, you could directly copy the test data 
 to your computer and the test data are now made available at:https://github.com/CnkiPythonMeta/CnkiPythonMeta/tree/main/test.
