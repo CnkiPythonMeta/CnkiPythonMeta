@@ -31,45 +31,40 @@ computer and the test data are now made available at:https://github.com/CnkiPyth
 	
 <4>Start the Python interpreter where Running_CnkiPythonMeta is located, then import the Python package:  
 	    python/py  
-	>>> import os  
-	>>> import xlrd  
-	>>> import xlwt  
-	>>> import matplotlib.pyplot as plt  
+	>>> import os
+	>>> import xlwt
+	>>> import matplotlib.pyplot as plt
 	>>> from scipy.stats import pearsonr
-	>>> import CnkiPythonMeta  	
+	>>> import numpy as np 
+	>>> from CnkiPythonMeta import *
 
-<4>Merge and extract the basic data information from TXT files into a single EXEL file and output the duplicate data:  
-	>>> input_dir = os.getcwd()  
-	>>> input_file_path = input_dir+'\\'+'Input_Data_1-Included_Literature\\'  
-	>>> journal_data = "Input_Data_2-Core_Journal_Data\\Core_Journal_Data.txt"  
-	>>> Quotations_and_downloads_data_dir = "Input_Data_3-Citations_and_Downloads_Data"  
-	>>> journal_list = CnkiPythonMeta.get_journal_list(journal_data)  
-	>>> paperName_infoList_dict = CnkiPythonMeta.get_paperName_infoList_dict(input_file_path)  
+<5>Merge and extract the basic data information from TXT files into a single EXEL file and output the duplicate data:  
+	>>> input_dir = os.getcwd()
+	>>> input_file_path = input_dir+'\\'+'Input_Data_1-Included_Literature\\'
+	>>> journal_data_path = input_dir+'\\' + "Input_Data_2-Core_Journal_Data\\"
+	>>> journal_list = get_journal_list(journal_data_path)
+	>>> paperName_infoList_dict = get_paperName_infoList_dict(input_file_path) 
 	
-<5>Extract all downloads and citations data from TXT files into a single EXEL file:  
-    >>> paperName_QuotationsDownloadsInfo_dict = CnkiPythonMeta.get_paperName_QuotationsDownloadsInfo_dict(Quotations_and_downloads_data_dir)  
-
-<6>Mark the core journal, count the number of authors, merge all citations and downloads data:  
-    >>> result_list = CnkiPythonMeta.output_result(journal_list, paperName_infoList_dict, paperName_QuotationsDownloadsInfo_dict)  
+<6>Output filtered basic data:  
+    >>> result_list = output_result(journal_list, paperName_infoList_dict)  
 	
 <7>Generate the histogram:  
-	>>> year_paperNum_dict, year_quations_dict, year_downloads_dict, Organ_paperNum_dict, found_paperNum_dict, author_paperNum_dict = CnkiPythonMeta.get_year_paperNum_dict(result_list)  
-	>>> CnkiPythonMeta.Histogram(year_paperNum_dict)  
+	>>> all_year_paperNum_dict,year_paperNum_dict,first_organ_list, found_list, author_paperNum_dict, author_list,keyWords_num_dict, Keyword_set, all_keywords_list = get_year_paperNum_dict(result_list)
+	>>> Histogram(year_paperNum_dict, all_year_paperNum_dict)  
 	
-<8>Generate the line chart:  
-	>>> CnkiPythonMeta.line_chart(year_quations_dict, year_downloads_dict)  
-  
-<9>Calculate the Pearson correlation coefficient:  
-	>>> CnkiPythonMeta.caculate_pearsonr(year_paperNum_dict, year_quations_dict, year_downloads_dict)  
+<8>Generate the organization data:  
+	>>> Organ_caculate(first_organ_list) 
 	
-<10>Generate the organization data:  
-	>>> CnkiPythonMeta.Organ_caculate(Organ_paperNum_dict)  
-	
-<11>Generate the fund data:  
-	>>> CnkiPythonMeta.found_caculate(found_paperNum_dict)  
+<9>Generate the fund data:  
+	>>> Found_caculate(found_list)  
 
-<12>Generate the author data:  
-	>>> CnkiPythonMeta.author_caculate(author_paperNum_dict)  
+<10>Generate the author data:  
+	>>> Author_caculate(author_paperNum_dict, author_list) 
+
+<11>Generate the key word data:
+	>>> plot_list = KeyWord_caculate(keyWords_num_dict, Keyword_set)
 	
+<12>Output the orgin2023 input file:
+	>>> Origin_input_file(Keyword_set, all_keywords_list, plot_list)
+
 <pre> 	
-	
