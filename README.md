@@ -27,7 +27,8 @@ Running_CnkiPythonMeta/
 
 
 If you are still struggle with the input directory and file structure, you could directly copy the test data to your 
-computer and the test data are now made available at:https://github.com/CnkiPythonMeta/CnkiPythonMeta/tree/main/raw_data.
+computer and the test data are now made available at:https://github.com/CnkiPythonMeta/CnkiPythonMeta/tree/main/raw_data, 
+then just running CnkiPythonMeta or following the next steps to summarize the basic data.
 	
 <4>Start the Python interpreter where Running_CnkiPythonMeta is located, then import the Python package:  
 	    python/py  
