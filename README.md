@@ -28,44 +28,7 @@ Running_CnkiPythonMeta/
 
 If you are still struggle with the input directory and file structure, you could directly copy the test data to your 
 computer and the test data are now made available at:https://github.com/CnkiPythonMeta/CnkiPythonMeta/tree/main/raw_data, 
-then just running CnkiPythonMeta or following the next steps to summarize the basic data.
-	
-<4>Start the Python interpreter where Running_CnkiPythonMeta is located, then import the Python package:  
-	    python/py  
-	>>> import os
-	>>> import xlwt
-	>>> import matplotlib.pyplot as plt
-	>>> from scipy.stats import pearsonr
-	>>> import numpy as np 
-	>>> from CnkiPythonMeta import *
+then just running CnkiPythonMeta  to summarize the basic data.
 
-<5>Merge and extract the basic data information from TXT files into a single EXEL file and output the duplicate data:  
-	>>> input_dir = os.getcwd()
-	>>> input_file_path = input_dir+'\\'+'Input_Data_1-Included_Literature\\'
-	>>> journal_data_path = input_dir+'\\' + "Input_Data_2-Core_Journal_Data\\"
-	>>> journal_list = get_journal_list(journal_data_path)
-	>>> paperName_infoList_dict = get_paperName_infoList_dict(input_file_path) 
-	
-<6>Output filtered basic data:  
-    >>> result_list = output_result(journal_list, paperName_infoList_dict)  
-	
-<7>Generate the histogram:  
-	>>> all_year_paperNum_dict,year_paperNum_dict,first_organ_list, found_list, author_paperNum_dict, author_list,keyWords_num_dict, Keyword_set, all_keywords_list = get_year_paperNum_dict(result_list)
-	>>> Histogram(year_paperNum_dict, all_year_paperNum_dict)  
-	
-<8>Generate the organization data:  
-	>>> Organ_caculate(first_organ_list) 
-	
-<9>Generate the fund data:  
-	>>> Found_caculate(found_list)  
-
-<10>Generate the author data:  
-	>>> Author_caculate(author_paperNum_dict, author_list) 
-
-<11>Generate the key word data:
-	>>> plot_list = KeyWord_caculate(keyWords_num_dict, Keyword_set)
-	
-<12>Output the orgin2023 input file:
-	>>> Origin_input_file(Keyword_set, all_keywords_list, plot_list)
 
 <pre> 	
